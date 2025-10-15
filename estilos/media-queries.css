@@ -11,38 +11,51 @@ grandes telas : acima de 1200px
  */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    /* tela de tablet */
-    body{
-        background-image: linear-gradient(to top, var(--cor-verde), var(--cor-lilás));
-    }
-    section#login{
-        width: 80vw;
-    }
-    div#imagem{
-        float: left;
-        width: 30%;
-        height: 100%;
-    }
-    div#formulario{
-        float: right;
-        width: 70%;
-    }
-} 
+  /* tela de tablet */
+  body {
+    background-image: linear-gradient(
+      to top,
+      var(--cor-verde),
+      var(--cor-lilás)
+    );
+  }
+  section#login {
+    width: 80vw;
+  }
+  div#imagem {
+    float: left; /*coloca a div pro lado esquerdo */
+    width: 30%;/*a largura dessa div ocupara 30% do lado esquerdo da section#login */
+    height: 100%;/*essa div ocupara 100% da altura da section#login*/
+  }
+  div#formulario {
+    float: right;/*coloca a div pro lado direito*/
+    width: 70%;/*essa div ocupara 70% do lado direito da section#login */
+  }
+}
 @media screen and (min-width: 992px) {
-    body{
-        background-image: linear-gradient(to top, var(--cor-verde), var(--cor-lilás));
-    }
-    section#login{
-        width: 990px;
-    }
-    div#imagem{
-        float: left;
-        width: 50%;
-        height: 100%;
-    }
-    div#formulario{
-        float: right;
-        width: 50%;
-        
-    }
+  body {
+    background-image: linear-gradient(
+      to top,
+      var(--cor-verde),
+      var(--cor-lilás)
+    );
+  }
+  section#login {
+    width: 990px;
+  }
+  div#imagem {
+    float: right; /*coloca a div pro lado direito */
+    width: 50%; /*div ocupará 50% da section#login* ao lado direito*/
+    height: 100%;
+  }
+  div#formulario {
+    float: left; /*coloca a div pro lado esquerdo*/
+    width: 50%; /*div ocupará 50% da section#login ao lado esquerdo*/
+  }
+  div#formulario > h1{
+    font-size: 2.2em;
+  }
+  div#formulario > p{
+    font-size: 1.1em;
+  }
 }
